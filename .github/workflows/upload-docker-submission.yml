@@ -35,7 +35,7 @@ jobs:
         name: Install required python packages
         run: |
           python -m pip install --upgrade pip
-          pip install tira
+          pip install 'git+https://github.com/tira-io/tira.git@development#&subdirectory=python-client' packaging requests==2.31.0
       -
         name: Set environment variables
         env:
